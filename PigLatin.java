@@ -15,7 +15,7 @@ public class PigLatin {
 		int length;
 		
 		int wordsNumber;
-		System.out.println("Enter in the number of words you would like to add, followed by your words");
+		System.out.println("Enter in the number of words you would like to add.");
 		wordsNumber = Integer.parseInt(keyboard.nextLine());
 		
 		String inputs[] = new String[wordsNumber];
@@ -23,6 +23,7 @@ public class PigLatin {
 		
 		for (int i = 0; i < wordsNumber; i++) {
 			
+			System.out.println("Enter in your word");
 			inputs[i] = keyboard.nextLine();
 			enter = inputs[i];
 			StringBuilder pigLatinChange = new StringBuilder(enter);
@@ -51,9 +52,10 @@ public class PigLatin {
 				inputs2[i] = pigLatinChange.toString();
 			}
 		}
+		System.out.println("Here is your Pig Latin translation!");
 		
 		for (int j = 0; j < wordsNumber; j++) {
-			System.out.println(inputs[j] + " ");
+			System.out.println(inputs2[j] + " ");//had to change the array the words were going to.
 		}
 	}
 	
